@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036"
+        app:layout_constraintVertical_bias="0.105"
         app:srcCompat="@drawable/title" />
 
     <TextView
@@ -29,6 +29,54 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.154" />
+
+    <Button
+        android:id="@+id/myMedications"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#1095A6"
+        android:fontFamily="serif"
+        android:text="My medications"
+        android:textSize="17sp"
+        app:cornerRadius="20dp"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeUser"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <Button
+        android:id="@+id/progress"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="serif"
+        android:text="Progress"
+        android:textSize="17sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeUser"
+        app:layout_constraintVertical_bias="0.552" />
+
+    <Button
+        android:id="@+id/addMedication"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#A949BA"
+        android:fontFamily="serif"
+        android:text="Add medication"
+        android:textSize="17sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeUser"
+        app:layout_constraintVertical_bias="0.193" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
