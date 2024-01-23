@@ -40,6 +40,7 @@ public class Register extends AppCompatActivity {
                     Intent intent = new Intent(Register.this, MainMenu.class);
                     intent.putExtra("USER_NAME", userNameReg);
                     startActivity(intent);
+                    finish();
                 }
             }
         });
