@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/progress"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:title="Progress" />
+    <item
+        android:id="@+id/addMedication"
+        android:icon="@drawable/add_pill164473"
+        android:title="Add Medication" />
+</menu>

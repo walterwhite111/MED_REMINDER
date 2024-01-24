@@ -37,7 +37,7 @@ public class Register extends AppCompatActivity {
                 if (TextUtils.isEmpty(userNameReg) || TextUtils.isEmpty(emailAddressReg) || TextUtils.isEmpty(passwordRgr)) {
                     Toast.makeText(Register.this, "Enter all required data!", Toast.LENGTH_LONG).show();
                 } else {
-                    Intent intent = new Intent(Register.this, MainMenu.class);
+                    Intent intent = new Intent(Register.this, MainActivity.class);
                     intent.putExtra("USER_NAME", userNameReg);
                     startActivity(intent);
                     finish();

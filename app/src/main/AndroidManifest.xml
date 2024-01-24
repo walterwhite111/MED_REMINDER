@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MED_REMINDER"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".LogIn"
             android:exported="false" />
         <activity
@@ -22,15 +25,15 @@
             android:name=".MyMedications"
             android:exported="false" />
         <activity
-            android:name=".MainMenu"
+            android:name=".MainMenuFragment"
             android:exported="false" />
         <activity
             android:name=".Register"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:theme ="@style/Theme.Design.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
