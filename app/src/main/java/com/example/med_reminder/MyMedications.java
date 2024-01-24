@@ -10,12 +10,14 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class MyMedications extends AppCompatActivity {
     Button addNew;
     ListView medList;
-    ArrayList<String> medicationList = new ArrayList<>();
+    private List<String> namesList;
+    private ArrayAdapter<String> adapter;
 
 
     @Override
@@ -25,15 +27,24 @@ public class MyMedications extends AppCompatActivity {
         addNew = findViewById(R.id.addNew);
         medList = findViewById(R.id.medList);
 
-        Intent intent = getIntent();
-        String medicineName = intent.getStringExtra("MEDICINE_NAME");
+        Intent intent1 = getIntent();
+        if (intent1 != null) {
+            String enteredName = intent1.getStringExtra("MEDICINE_NAME");
 
-        if (medicineName != null && !medicineName.isEmpty()) {
-            medicationList.add(medicineName);
+
+            if (namesList == null) {
+                namesList = new ArrayList<>();
+            }
+
+
+            namesList.add(enteredName);
+
+
+            adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, namesList);
+
+
+            medList.setAdapter(adapter);
         }
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, medicationList);
-        medList.setAdapter(adapter);
 
         addNew.setOnClickListener(new View.OnClickListener() {
             @Override
